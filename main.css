@@ -1,0 +1,22 @@
+.center {
+    text-align: left;
+}
+
+.section {
+    background-color: #4f9fcf;
+}
+table {
+    border: 1px solid #eceeef;
+}
+
+.table td, .table th {
+    padding: 2px;
+}
+
+body {
+	margin-top: 40px;
+}
+
+ul {
+	margin: 0;
+}
