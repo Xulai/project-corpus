@@ -1,7 +1,9 @@
 .center {
     text-align: center;
 }
-
+.right {
+	text-align: right;
+}
 .section {
     background-color: #4f9fcf;
 }
@@ -19,4 +21,14 @@ body {
 
 ul {
 	margin: 0;
+}
+
+p {
+	text-align: justify;
+}
+
+.test-wrapper {
+	border: 3px solid #4f9fcf;
+    padding: 25px;
+    margin-top: 45px;
 }
