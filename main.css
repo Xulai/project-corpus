@@ -4,8 +4,11 @@
 .right {
 	text-align: right;
 }
+.next {
+    margin-top: 100px;
+}
 .section {
-    background-color: #4f9fcf;
+    background-color: lightblue;
 }
 table {
     border: 1px solid #eceeef;
@@ -27,7 +30,7 @@ p {
 	text-align: justify;
 }
 
-.test-wrapper {
+.wrapper {
 	border: 3px solid #4f9fcf;
     padding: 25px;
     margin-top: 45px;
