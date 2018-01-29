@@ -35,3 +35,8 @@ p {
     padding: 25px;
     margin-top: 45px;
 }
+
+h6 { 
+    text-decoration: underline;
+    margin-top: 50px;
+}
