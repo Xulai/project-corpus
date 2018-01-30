@@ -14,6 +14,12 @@ table {
     border: 1px solid #eceeef;
 }
 
+.orange {
+    color: orange;
+}
+.blue {
+    color: blue;
+}
 .table td, .table th {
     padding: 2px;
 }
@@ -24,6 +30,13 @@ body {
 
 ul {
 	margin: 0;
+}
+
+.ideas-list {
+    list-style-type: decimal;
+}
+.ideas-list .idea {
+    margin: 20px;
 }
 
 p {
