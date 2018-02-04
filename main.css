@@ -49,6 +49,26 @@ p {
     margin-top: 45px;
 }
 
+.wrapper.source-sensor {
+    background-image: url('project-management/github-sensor.png');
+}
+.wrapper.source-api {
+    background-image: url('project-management/github-api.png');
+}
+
+.wrapper.document-control {
+    background-image: url('project-management/google-drive.png');
+}
+.wrapper.document-control-minutes {
+    background-image: url('project-management/google-drive-minutes.png');
+}
+
+.wrapper.background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+}
+
 h6 { 
     text-decoration: underline;
     margin-top: 50px;
