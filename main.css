@@ -43,6 +43,11 @@ p {
 	text-align: justify;
 }
 
+.minute-wrapper {
+    margin: 15px;
+    border: 3px solid #4f9fcf;
+    padding: 10px;
+}
 .wrapper {
 	border: 3px solid #4f9fcf;
     padding: 25px;
@@ -72,4 +77,14 @@ p {
 h6 { 
     text-decoration: underline;
     margin-top: 50px;
+}
+
+img, iframe {
+    width: 100%;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #e8e8e8;
+    margin-top: 40px;
 }
