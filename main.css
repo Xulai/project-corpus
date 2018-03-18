@@ -83,6 +83,11 @@ img, iframe {
     width: 100%;
 }
 
+img.environment-agency {
+    width: 300px!important;
+    height: 200!important;
+}
+
 .footer {
     padding: 20px;
     background-color: #e8e8e8;

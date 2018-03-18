@@ -21,24 +21,8 @@
                 <h4 class="center">CO600 Project Corpus</h4>
                 <h5 class="center">Integration testing</h5>
                 <!-- <p>more to add - ttn mapper log, lorawan test code?</p> -->
-                <p>This page will display a range of tests that we carried out throughout our project to ensure that our ultrasonic sensor was working as expected and that we knew of the strongest/weakest signal points around Canterbury.</p>
+                <p>This page will display a range of tests that we carried out throughout our project to ensure that our ultrasonic sensor was working as expected (initially on its own, and eventually with all connected components).</p>
 
-                <div class="wrapper">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Testing for expected values using an arm for river simulations</h5>
-                        </div>
-                        <div class="col-12">
-                            <img src="integration.png" alt="Integration testing">
-                        </div>
-                        <div class="col-12">
-                            <img src="integration-testing-2.jpg" alt="Integration testing">
-                        </div>
-                        <div class="col-12">
-                            <p><strong>Method:</strong></p>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="wrapper">
                     <div class="row">
@@ -49,7 +33,8 @@
                             <iframe width="460" height="315" src="https://www.youtube.com/embed/7OP0GSppxJc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="col-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error dicta, nobis deleniti? Et, at. Enim suscipit delectus, odit laudantium non numquam ad nesciunt voluptatum neque, sapiente harum. Possimus, sed.</p>
+                            <p><strong>Method:</strong></p>
+                            <p>Initially, we tested our ultrasonic sensor against an actual river level to confirm that our river simultation logic was working (moving the sensor up indicated river level decreasing and moving it down indicated that the sensor was closer to the top of the river therefor river level was increasing).</p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +48,33 @@
                             <iframe width="460" height="315" src="https://www.youtube.com/embed/vkxQc5o0Azk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="col-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error dicta, nobis deleniti? Et, at. Enim suscipit delectus, odit laudantium non numquam ad nesciunt voluptatum neque, sapiente harum. Possimus, sed.</p>
+                            <p><strong>Method:</strong></p>
+                            <p>We noticed that testing for expected values when moving the sensor closer towards floors/walls indoors produced at times anomalous results, therefore we took the alternative approach of testing it against moving objects (simulation of river level moving closer towards it). By balancing the sensor on a table, we moved a wooden board towards it and observed the values printed to the serial monitor.</p>
+
+                            <p>This time we entered '0' as the river's depth (in mm), and hoped that the river depth values would increase the closer the board got to it. As we can see from the video, this is exactly what the test achieved.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Testing for expected values using an arm for river simulations</h5>
+                        </div>
+                        <div class="col-12">
+                            <img src="integration.png" alt="Integration testing">
+                        </div>
+                        <div class="col-12">
+                            <img src="integration-testing-2.jpg" alt="Integration testing">
+                        </div>
+                        <div class="col-6">
+                            <br />
+                            <p><strong>Method:</strong></p>
+                            <p>We created a prototype of our sensor attached to an arm to further validate its results. Again using the same approach, we entered '0' as the initial river's depth, then as we lowered the arm, the depth increased. The results produced can be seen on the right:</p>
+                            <p><strong>*** menu ***</strong> used to indicate that the engineering menu options were printed after selecting the 'current measurement' option.</p>
+                        </div>
+                        <div class="col-6">
+                            <img class="wrapper" src="test-results.png" alt="Integration testing">
                         </div>
                     </div>
                 </div>
@@ -71,7 +82,7 @@
         </div>
 
         <footer class="footer">
-            <div class="container">&copy; CO600 Flood Sensor 2018</div>
+            <div class="container">&copy; CO600 Flood Watch 2018</div>
         </footer>
     </body>
 </html>
