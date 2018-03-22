@@ -1,3 +1,9 @@
 [submodule "flood-sensor"]
 	path = flood-sensor
 	url = https://github.com/nats12/Flood-Sensor
+[submodule "api"]
+	path = api
+	url = https://github.com/nats12/project-api
+[submodule "node.js"]
+	path = node.js
+	url = https://github.com/Xulai/projectnode
