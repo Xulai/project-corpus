@@ -1,3 +1,6 @@
+
+/*** SPECIAL CLASSES ***/
+
 .center {
     text-align: center;
 }
@@ -10,39 +13,29 @@
 .section {
     background-color: lightgray;
 }
-table {
-    border: 1px solid #eceeef;
-}
-
 .orange {
     color: orange;
 }
 .blue {
     color: blue;
 }
-.table td, .table th {
-    padding: 2px;
-    border: 1px solid #eceeef;
-}
-
-body {
-	margin-top: 40px;
-}
-
-ul {
-	margin: 0;
-}
-
 .ideas-list {
     list-style-type: decimal;
 }
 .ideas-list .idea {
     margin: 20px;
 }
-
-p {
-	text-align: justify;
+.footer {
+    padding: 20px;
+    background-color: #e8e8e8;
+    margin-top: 40px;
 }
+
+/************************/
+
+
+
+/*** WRAPPERS ***/
 
 .minute-wrapper {
     margin: 15px;
@@ -75,22 +68,54 @@ p {
     background-size: cover;
 }
 
+/************************/
+
+
+
+
+/*** GENERAL ELEMENTS ***/
+
 h6 { 
     text-decoration: underline;
     margin-top: 50px;
 }
 
+p {
+    text-align: justify;
+}
+
+body {
+    margin-top: 40px;
+}
+
+ul {
+    margin: 0;
+}
+
+table {
+    border: 1px solid #eceeef;
+}
+.table td, .table th {
+    padding: 2px;
+    border: 1px solid #eceeef;
+}
+
+/************************/
+
+
+
+/*** IMAGES ***/
+
 img, iframe {
     width: 100%;
 }
-
 img.environment-agency {
     width: 300px!important;
     height: 200!important;
 }
-
-.footer {
-    padding: 20px;
-    background-color: #e8e8e8;
-    margin-top: 40px;
+img.ttn {
+    width: 800px!important;
 }
+
+/************************/
+
