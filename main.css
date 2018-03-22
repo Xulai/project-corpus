@@ -8,7 +8,7 @@
     margin-top: 100px;
 }
 .section {
-    background-color: lightblue;
+    background-color: lightgray;
 }
 table {
     border: 1px solid #eceeef;
@@ -22,6 +22,7 @@ table {
 }
 .table td, .table th {
     padding: 2px;
+    border: 1px solid #eceeef;
 }
 
 body {
