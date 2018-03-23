@@ -61,6 +61,12 @@
 .wrapper.document-control-minutes {
     background-image: url('project-management/google-drive-minutes.png');
 }
+.wrapper.api-graphs {
+    background-image: url('implementation/flood-watch-graphs.png');
+    background-position: 50%;
+    background-size: contain!important;
+    background-repeat: no-repeat;
+}
 
 .wrapper.background {
     height: 300px;
