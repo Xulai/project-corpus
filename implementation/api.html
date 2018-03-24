@@ -24,7 +24,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="wrapper">
-                            <p>API description</p>
+                            <p>Our API provides an interface to our datapoints stored in InfluxDB. We also access relational Areas and Devices in MySQL.</p>
+                            <p>We provide endpoints to get the readings, errors and still heres grouped by different time intervals.</p>
+                            <p>Devices and Areas also have each of the datapoints as subresource routes to better represent the resources in the url.</p>
+                            <p>The API also provides Stats overall as well as for devices and area. The stats contain aggregates and counts of the readings.</p>
                         </div>
                     </div>
                 </div>
@@ -32,10 +35,18 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="list-group">
+                            <li class="list-group-item"><a href="../api/app/Models/Area.php" target="_blank">Area.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Models/Device.php" target="_blank">Device.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Models/Error.php" target="_blank">Error.php</a></li>
                             <li class="list-group-item"><a href="../api/app/Models/Reading.php" target="_blank">Reading.php</a></li>
-                            <li class="list-group-item"><a href="../api/app/Http/Controllers/ReadingController.php" target="_blank">ReadingController.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Models/Stat.php" target="_blank">Stat.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Models/StillHere.php" target="_blank">StillHere.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Http/Controllers/AreaController.php" target="_blank">AreaController.php</a></li>
                             <li class="list-group-item"><a href="../api/app/Http/Controllers/DeviceController.php" target="_blank">DeviceController.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Http/Controllers/ErrorController.php" target="_blank">ErrorController.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Http/Controllers/ReadingController.php" target="_blank">ReadingController.php</a></li>
                             <li class="list-group-item"><a href="../api/app/Http/Controllers/StatController.php" target="_blank">StatController.php</a></li>
+                            <li class="list-group-item"><a href="../api/app/Http/Controllers/StillHereController.php" target="_blank">StillHereController.php</a></li>
                         </ul>
                     </div>
                 </div>

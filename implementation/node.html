@@ -24,7 +24,9 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="wrapper">
-                            <p>Node description</p>
+                            <p>Our node client listens to uplinks from The Things Network and saves the recieved data into InfluxDB</p>
+                            <p>Once it receives an uplink, it uses redis to do some basic processing utilising the previous reading to calculate differences.</p>
+                            <p>The client also constructs the schema for InfluxDB the first time it is run. </p>
                         </div>
                     </div>
                 </div>
