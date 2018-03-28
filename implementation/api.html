@@ -19,10 +19,16 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="wrapper">
-                            <p>Our API provides an interface to our datapoints stored in InfluxDB. We also access relational Areas and Devices in MySQL.</p>
-                            <p>We provide endpoints to get the readings, errors and still heres grouped by different time intervals.</p>
-                            <p>Devices and Areas also have each of the datapoints as subresource routes to better represent the resources in the url.</p>
-                            <p>The API also provides Stats overall as well as for devices and area. The stats contain aggregates and counts of the readings.</p>
+                            <p>Our REST API provides a resourceful interface to our devices, the areas they're in and all the datapoint measurements associated with them.</p>
+                            <p>To build the RESTful API we use a combination of Laravel's inbuilt API features to setup the core framework. We then use The PHPLeague's resource transformers, this allows us to transform our models into resources with additional features such as including, meeting the criteria of the json response standard JSONAPI giving people a documented standard to understand our responses faster.</p>
+                            <p>The data is split between the Readings, Still Heres and Errors timeseries in InfluxDB. And our more relational structures of Devices and Areas in MySQL.</p>
+                            <p>We also have sixth model which we use that is the basis of stats. This model applies arregates on the readings to provides stats such as the average reading, the amount of readings and more.</p>
+                            <p>The relational structure of MySQL is used to allow us to have IDs for devices and apply them as tags on the timeseries datapoints. It also allows us to provide a relation of many devices to one area to provide more structure by grouping the devices. The Areas can then have a parent area to provide endless recursive grouping.</p>
+                            <p>Each of the six models acts as a basis of an endpoint. We provide Indexes and Shows, that provide a list of data or data for a specific ID. Such as "/devices" being a list of device data and "/devices/abc1" being the device data for device abc1.</p>
+                            <p>For the influxdb measurement endpoints we also provide a series of different time interval groupings such as Daily, Monthly and Yearly. This allows the many datapoints to be grouped and averaged to better understand the data over a longer period of time.</p>
+                            <p>To filter out the measurements per devices and then grouped further to areas we provide subresource endpoints such as "/device/abc1/reading" Which would provide all readings belonging to device abc1.</p>
+                            <p>Using Laravel's migration feature we allow the MySQL schema structure be built and setup with a single command. This also allows for easy additions to it in the future.</p>
+                            <p>For Testing, we use a combination of Laravel's Seeders and Factories to create fake data that then allows us to test the endpoints are bringing back that data succesful. For the tests themselves we use PHPUnit and Laravel's helpers to call the endpoints and check the responses.</p>
                         </div>
                     </div>
                 </div>
