@@ -13,18 +13,23 @@
     <body>
         <div class="container">
             <div class="col-12">
-                <a href="../../index.html">
-                    Back
-                </a>
-            </div>
-            <div class="col-12">
                 <h4 class="center">CO600 Project Corpus</h4>
                 <h5 class="center">Device and area stats</h5>
                 
                 <div class="row">
                     <div class="col-12">
                         <div class="wrapper">
-                            <p>Device and area stats description</p>
+                            <p>A big part of our API was to quickly access meaningful data coming from our sensors. In order to ensure this, our API provided a range of endpoints to query the following information on devices and areas:
+                                <ul>
+                                    <li>The average of all readings.</li>
+                                    <li>The last reading sent to the database.</li>
+                                    <li>The last previous reading difference (as a value and a percentage) and average of the previous reading difference percents.</li>
+                                    <li>A count of how many readings.</li>
+                                    <li>An average of all previous reading differences.</li>
+                                    <li>The average of the power &amp; the last power sent to the database.</li>
+                                </ul>
+                            </p
+                            <p>There was a specific endpoint for all statistics <code>/stat</code>, and for statistis of a specific device or area, <code>/device/ID/stat</code>, <code>/area/ID/stat</code></p>
                         </div>
                     </div>
                 </div>
