@@ -16,8 +16,8 @@
                 <h4 class="center">CO600 Project Corpus</h4>
                 <h5 class="center">API Frontend</h5>
 
-                <p>Our graphs acted as a proof of concept at the Project Fair as we demonstrated our API's functionality. Using JavaScript framework Vue.js, we created a component for every time period we might be interested in looking at.</p>
-                <p>We chose to use Vue.js due to its popularity and efficientness when building user interfaces. It's component based structure matched well with the web page we wanted to create and it's documentation was easy to read and learn.</p>    
+                <p>Our graphs acted as a proof of concept at the Project Fair whilst demonstrating our API's functionality. Using JavaScript framework Vue.js, a component for every time period that we might be interested in looking at was created. Each component (named DailyReadings, MonthlyReadings etc) is selectable via some buttons and include a function that runs a GET request on our API's <code>device</code> endpoints to fetch the ID of each device. Then, a further request is sent to an endpoint that includes the device's ID, the time period and the data required (readings). For each response received, the component creates a graph displaying readings taken by that device. A request to fetch daily readings for device "abc1" would look like this: <code>device/abc1/reading/daily?type='1'</code>. Type 1 in this case refers to readings only.</p>
+                <p>We chose to use Vue.js due to its popularity and efficientness when building user interfaces. As we wanted a quick and smooth user experience, it's component based structure matched well with the web page that we wanted to create and it's documentation was easy to read and learn.</p>
              </div>
             
             <div class="row">
