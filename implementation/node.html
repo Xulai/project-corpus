@@ -25,8 +25,12 @@
                     <div class="col-12">
                         <div class="wrapper">
                             <p>Our node client listens to uplinks from The Things Network and saves the recieved data into InfluxDB</p>
-                            <p>Once it receives an uplink, it uses redis to do some basic processing utilising the previous reading to calculate differences.</p>
-                            <p>The client also constructs the schema for InfluxDB the first time it is run. </p>
+                            <p>If the schema isn't set up on InfluxDB to store the datapoints, then on first run the node client creates the schema.</p>
+                            <p>To prevent unknown devices from possibly sending uplinks, the node client gets the list of setup devices from TTN which it then uses as a whitelist and ignores unknown device IDs. 
+                                If it is unable to get the list then instead relies on a literal array whitelist.</p>
+                            <p>Once the client receives an uplink from TTN, it does a check on type to save Readings, Still Heres and Errors into different measurements on InfluxDB.</p>
+                            <p>If the data uplink is of type readingit uses redis to do some basic processing utilising the previous reading to calculate differences.</p>
+                            <p>To help testing, there's also a data seeder to generate fake data for the InfluxDB measurements. And there are also jasmine tests for the payload formating functions.</p>
                         </div>
                     </div>
                 </div>
